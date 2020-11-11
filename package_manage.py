@@ -1,5 +1,6 @@
 import os as os
 
+print('\nFetching Updates...')
 os.system('sudo apt-get update')
 os.system('sudo apt update')
 os.system('sudo apt-get upgrade')
