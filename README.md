@@ -1,2 +1,3 @@
 # system_management
-Files for maintaining home Ubuntu 18 system
+Python script to manage Ubuntu packages.  Run in home directory.
+
