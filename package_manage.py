@@ -1,17 +1,14 @@
 import os as os
 
-print('\nFetching Updates...')
-os.system('sudo apt-get update')
+print('\nUpdating Package Repository...')
 os.system('sudo apt update')
 
-print('\nUpgrading...')
-os.system('sudo apt-get upgrade')
-os.system('sudo apt upgrade')
+print('\nUpgrading Packages and Removing Unnecessary Dependencies...')
+os.system('sudo apt full-upgrade')
 
-print('\nAutoremoving...')
-os.system('sudo apt-get autoremove')
-os.system('sudo apt autoremove')
-
-print('\nRemoving Thumbnails and Cleaning...')
+print('\nRemoving Thumbnails...')
 os.system('sudo rm -rf ~/.thumbnails')
+
+print('\nCleaning APT cache...')
+os.system('sudo apt-get autoclean')
 os.system('sudo apt-get clean')
