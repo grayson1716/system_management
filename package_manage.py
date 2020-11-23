@@ -12,3 +12,6 @@ os.system('sudo rm -rf ~/.thumbnails')
 print('\nCleaning APT cache...')
 os.system('sudo apt-get autoclean')
 os.system('sudo apt-get clean')
+
+print('\nAutoremoving...')
+os.system('sudo apt autoremove')
